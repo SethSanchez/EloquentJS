@@ -24,15 +24,19 @@ function range(start, end) {
 
 function sum(array) {
     //Return the sum of numbers from given array
+    var position = 0;
+    var runningTotal = 0;
 
     for (var length = 0; length < array.length; length++) {
-        var position = 0;
-        var toAdd = array[position] + array[position + 1];
-        
-        console.log("I'm at: " + toAdd);
+        // I need to save the total of array[0] + array[1], then add that to array[2], then that to array[3], and so on.
+        var firstVal = array[position];
+        var secondVal = array[position + 1];
+        runningTotal = firstVal + secondVal;
+
+        console.log("I'm at: " + runningTotal);
         position += 1;
     }
-    console.log(toAdd)
+    //console.log(toAdd)
 }
 
 sum(range(1,10));
