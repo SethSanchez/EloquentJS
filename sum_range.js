@@ -19,6 +19,9 @@ function range(start, end) {
     return list;
 }
 
+//This is Ex1.1
+//Take an array of numbers, and return the sum.
+
 function sum(array) {
     //Return the sum of numbers from given array
 
@@ -28,7 +31,6 @@ function sum(array) {
         
         console.log("I'm at: " + toAdd);
         position += 1;
-        length += 1;
     }
     console.log(toAdd)
 }
