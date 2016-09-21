@@ -7,7 +7,7 @@ function range(start, end) {
     } else if (typeof end != "number") {
         console.log("I need a number to end with.");
     } else {
-        console.log("I'm listing all numbers between " + start + " and " + end + ".");
+        console.log("I'm listing all numbers from " + start + " and up to " + end + ".");
     }
 
     while (begin <= end) {
