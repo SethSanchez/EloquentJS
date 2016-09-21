@@ -15,7 +15,22 @@ function range(start, end) {
        list.push(begin);
        begin += 1;
     }
-    console.log(list);
+    console.log("This is the array: [" + list + "]\n");
+    return list;
 }
 
-range(1,22);
+function sum(array) {
+    //Return the sum of numbers from given array
+
+    for (var length = 0; length < array.length; length++) {
+        var position = 0;
+        var toAdd = array[position] + array[position + 1];
+        
+        console.log("I'm at: " + toAdd);
+        position += 1;
+        length += 1;
+    }
+    console.log(toAdd)
+}
+
+sum(range(1,10));
