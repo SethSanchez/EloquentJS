@@ -1,4 +1,5 @@
 function range(start, end) {
+    //Ex 1.0 - List all numbers between start and end.
     var begin = start;
     var list = [];
 
@@ -15,24 +16,22 @@ function range(start, end) {
        list.push(begin);
        begin += 1;
     }
-    console.log("This is the array: [" + list + "]\n");
+    console.log("The numbers are: [" + list + "]");
     return list;
 }
 
-//This is Ex1.1
-//Take an array of numbers, and return the sum.
-
 function sum(array) {
+    //Ex 1.1 - Take an array of numbers, and return the sum.
     var position = 1;
     var runningTotal = 0;
     var firstVal = array[0];
 
     for (var length = 1; length < array.length; length++) {
         firstVal  = firstVal + array[position];
-        console.log("I'm at: " + firstVal);
+        //console.log("I'm at: " + firstVal);
         position += 1;
     }
-    //console.log(toAdd)
+    console.log("The total sum is: " + firstVal + ".")
 }
 
 sum(range(1,10));
