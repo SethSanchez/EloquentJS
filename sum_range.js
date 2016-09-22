@@ -23,17 +23,13 @@ function range(start, end) {
 //Take an array of numbers, and return the sum.
 
 function sum(array) {
-    //Return the sum of numbers from given array
-    var position = 0;
+    var position = 1;
     var runningTotal = 0;
+    var firstVal = array[0];
 
-    for (var length = 0; length < array.length; length++) {
-        // I need to save the total of array[0] + array[1], then add that to array[2], then that to array[3], and so on.
-        var firstVal = array[position];
-        var secondVal = array[position + 1];
-        runningTotal = firstVal + secondVal;
-
-        console.log("I'm at: " + runningTotal);
+    for (var length = 1; length < array.length; length++) {
+        firstVal  = firstVal + array[position];
+        console.log("I'm at: " + firstVal);
         position += 1;
     }
     //console.log(toAdd)
