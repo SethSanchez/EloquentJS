@@ -15,9 +15,11 @@ function range(start, end, step) {
         console.log("I'm listing all numbers from " + start + " and up to " + end + ".");
     }
 
+    //TODO: Rewrite while to accept negative values. [5,4,3,2,1];
+
     while (begin <= end) {
-       // Return an array of all numbers from start up to and including end.
        list.push(begin);
+       //Ex 1.2 - Add a step value to go through the array.
        begin += stepVal;
     }
     console.log("The numbers are: [" + list + "]");
@@ -32,7 +34,6 @@ function sum(array) {
 
     for (var length = 1; length < array.length; length++) {
         firstVal  = firstVal + array[position];
-        //console.log("I'm at: " + firstVal);
         position += 1;
     }
     console.log("The total sum is: " + firstVal + ".")
