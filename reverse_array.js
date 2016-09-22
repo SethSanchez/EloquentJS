@@ -14,9 +14,10 @@ function reverseArray(array) {
         for (var length = 1; length <= array.length; length++) {
             newArray.push(array[position]);
             position -= 1;
-            console.log(newArray);
         }
     }
+    console.log("Your reversed array is: [" + newArray + "]")
+    return newArray;
 }
 
-reverseArray([1,2,3,4,5])
+reverseArray([1,3,2,6])
