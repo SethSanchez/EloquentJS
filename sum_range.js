@@ -1,12 +1,16 @@
-function range(start, end) {
+function range(start, end, step) {
     //Ex 1.0 - List all numbers between start and end.
     var begin = start;
+    var stepVal = step;
     var list = [];
 
     if (typeof start != "number") {
         console.log("I need a number to start with.");
     } else if (typeof end != "number") {
         console.log("I need a number to end with.");
+    } else if (typeof step != "number") {
+        stepVal = 1;
+        console.log("I'm setting the step value to 1.");
     } else {
         console.log("I'm listing all numbers from " + start + " and up to " + end + ".");
     }
@@ -14,7 +18,7 @@ function range(start, end) {
     while (begin <= end) {
        // Return an array of all numbers from start up to and including end.
        list.push(begin);
-       begin += 1;
+       begin += stepVal;
     }
     console.log("The numbers are: [" + list + "]");
     return list;
@@ -34,4 +38,4 @@ function sum(array) {
     console.log("The total sum is: " + firstVal + ".")
 }
 
-sum(range(1,10));
+sum(range(1,10,2));
