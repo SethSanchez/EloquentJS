@@ -3,7 +3,7 @@
 //Cannot use the .reverse() method.
 
 function reverseArray(array) {
-    var position = 0;
+    var position = array.length - 1;
     var copyMe = array[position];
     var newArray = [];
 
@@ -11,10 +11,12 @@ function reverseArray(array) {
         console.log("I need a real array bro.");
     } else {
         console.log("You gave me: [" + array + "]");
-        for (var length = 1; length < array.length; length++) {
-            newArray = array[position];
+        for (var length = 1; length <= array.length; length++) {
+            newArray.push(array[position]);
+            position -= 1;
+            console.log(newArray);
         }
     }
 }
 
-reverseArray([1,2,3])
+reverseArray([1,2,3,4,5])
