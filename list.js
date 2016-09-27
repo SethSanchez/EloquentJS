@@ -9,7 +9,7 @@ function arrayToList(array) {
         console.log("This doesn't seem to be a valid array.");
     } else {
         console.log("You gave me: [" + array + "].");
-        for (var length = 1; length <= array.length; length++) {
+        for (var length = 0; length < array.length; length++) {
             newList = {value: array[position], rest: newList};
             position -= 1;
             console.log(newList)
