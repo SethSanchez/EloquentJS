@@ -12,10 +12,11 @@ function arrayToList(array) {
         for (var length = 0; length < array.length; length++) {
             newList = {value: array[position], rest: newList};
             position -= 1;
-            console.log(newList)
+            //console.log(newList)
         }
+        console.log("Here's the list I made: ");
+        console.log(JSON.stringify(newList));
     }
-    console.log("Here's what's left: \n" + newList);
 }
 
 //3.1 Write function listToArray that turns an list into an array
