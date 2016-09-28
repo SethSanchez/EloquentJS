@@ -35,13 +35,10 @@ function range(start, end, step) {
 
 function sum(array) {
     //Ex 1.1 - Take an array of numbers, and return the sum.
-    var position = 1;
-    var runningTotal = 0;
     var firstVal = array[0];
 
     for (var length = 1; length < array.length; length++) {
-        firstVal  = firstVal + array[position];
-        position += 1;
+        firstVal  = firstVal + array[length];
     }
     console.log("The total sum is: " + firstVal + ".")
 }
